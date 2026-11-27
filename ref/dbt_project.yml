@@ -1,0 +1,17 @@
+name: northwind_dw
+version: "1.0.0"
+profile: northwind_dw
+model-paths: ["models"]
+macro-paths: ["macros"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+snapshot-paths: ["snapshots"]
+analysis-paths: ["analyses"]
+models:
+northwind_dw:
+staging:
++schema: staging
++materialized: view
+warehouse:
++schema: warehouse
++materialized: table
